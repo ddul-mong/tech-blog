@@ -1,0 +1,20 @@
+{
+	"name": "@dul-mong/tailwind-config",
+	"version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"exports": {
+		"./base": {
+			"default": "./src/base.ts"
+		}
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@dul-mong/tsconfig": "workspace:*",
+		"tailwindcss": "^3.4.6",
+		"typescript": "latest"
+	}
+}

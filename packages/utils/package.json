@@ -1,0 +1,23 @@
+{
+	"name": "@dul-mong/utils",
+	"scripts": {
+		"build": "tsup"
+	},
+	"exports": {
+		"./sleep": {
+			"import": {
+				"types": "./dist/sleep.d.mts",
+				"default": "./dist/sleep.mjs"
+			},
+			"require": {
+				"types": "./dist/sleep.d.ts",
+				"default": "./dist/sleep.js"
+			}
+		}
+	},
+	"devDependencies": {
+		"@dul-mong/tsconfig": "workspace:*",
+		"tsup": "^8.3.0",
+		"typescript": "^5"
+	}
+}

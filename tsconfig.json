@@ -1,0 +1,6 @@
+{
+	"compilerOptions": {
+		"jsx": "react"
+	},
+	"extends": "@dul-mong/tsconfig/base.json"
+}

@@ -1,3 +1,7 @@
+"use client";
+
+// import {sleep} from "@dul-mong/utils/sleep"
+
 import Image from "next/image";
 
 export default function Home() {

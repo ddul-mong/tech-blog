@@ -15,6 +15,10 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
-		"target": "ES2022"
+		"target": "ES2022",
+		"paths": {
+			"@dul-mong/utils": ["packages/utils/src"],
+			"@dul-mong/utils/*": ["packages/utils/src/*"]
+		}
 	}
 }

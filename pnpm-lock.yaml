@@ -21,6 +21,46 @@ importers:
         specifier: 5.8.2
         version: 5.8.2
 
+  apps/dul-mong-blog:
+    dependencies:
+      next:
+        specifier: 15.3.1
+        version: 15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react:
+        specifier: ^19.0.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.1.0(react@19.1.0)
+    devDependencies:
+      '@dul-mong/tailwind-config':
+        specifier: workspace:*
+        version: link:../../configs/tailwind-config
+      '@dul-mong/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
+      '@dul-mong/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
+      '@tailwindcss/postcss':
+        specifier: ^4
+        version: 4.0.17
+      '@types/node':
+        specifier: ^20
+        version: 20.17.30
+      '@types/react':
+        specifier: ^19
+        version: 19.1.2
+      '@types/react-dom':
+        specifier: ^19
+        version: 19.0.4(@types/react@19.1.2)
+      tailwindcss:
+        specifier: ^4
+        version: 4.1.4
+      typescript:
+        specifier: ^5
+        version: 5.8.3
+
   apps/yuns-blog:
     dependencies:
       next:
@@ -2732,6 +2772,10 @@ snapshots:
   '@types/react-dom@19.0.4(@types/react@19.0.12)':
     dependencies:
       '@types/react': 19.0.12
+
+  '@types/react-dom@19.0.4(@types/react@19.1.2)':
+    dependencies:
+      '@types/react': 19.1.2
 
   '@types/react@19.0.12':
     dependencies:

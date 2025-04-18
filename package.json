@@ -10,6 +10,7 @@
 		"format:biome": "npx @biomejs/biome format --write ."
 	},
 	"devDependencies": {
+		"@dul-mong/tsconfig": "workspace:*",
 		"@biomejs/biome": "1.9.4",
 		"lefthook": "1.11.2",
 		"turbo": "^2.4.4",

@@ -1,7 +1,12 @@
-"use client";
+import { getAllPosts } from "@/entities/post/model/post";
+import PostsPage from "@/page/posts";
 
-import type { ReactElement } from "react";
+export default async function Home() {
+	const posts = await getAllPosts();
 
-export default function Home(): ReactElement {
-	return <div>HelloWorld</div>;
+	return (
+		<main>
+			<PostsPage posts={posts} />
+		</main>
+	);
 }

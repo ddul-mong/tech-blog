@@ -6,7 +6,9 @@ interface PostCardProps {
 	post: PostWithFrontmatterType;
 }
 
-export const PostCard = ({ post }: PostCardProps) => {
+import type { FC } from "react";
+
+export const PostCard: FC<PostCardProps> = ({ post }) => {
 	const postLink = `/posts${post.filePath.join("/")}`;
 
 	return (

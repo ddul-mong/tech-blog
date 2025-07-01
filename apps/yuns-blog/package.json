@@ -22,6 +22,7 @@
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
 		"dayjs": "^1.11.13",
+		"next-mdx-remote": "^5.0.0",
 		"tailwindcss": "^4",
 		"typescript": "^5"
 	}

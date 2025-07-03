@@ -7,7 +7,9 @@ type PostPageProps = {
 	post: PostWithFrontmatterType;
 };
 
-export default function PostDetailPage({ post }: PostPageProps) {
+import type { ReactElement } from "react";
+
+export default function PostDetailPage({ post }: PostPageProps): ReactElement {
 	return (
 		<section className={cn("md:max-w-3xl")}>
 			<PostDetailTitle>{post.title}</PostDetailTitle>

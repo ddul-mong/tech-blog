@@ -6,7 +6,7 @@ type PostsPageProps = {
 	posts: PostWithFrontmatterType[];
 };
 
-export default function PostsPage({ posts }: PostsPageProps) {
+const PostsPage: React.FC<PostsPageProps> = ({ posts }) => {
 	return (
 		<>
 			<ul
@@ -20,4 +20,6 @@ export default function PostsPage({ posts }: PostsPageProps) {
 			</ul>
 		</>
 	);
-}
+};
+
+export default PostsPage;

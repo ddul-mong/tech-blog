@@ -101,7 +101,7 @@ export const getFrontmatter = async (
 	return frontmatter;
 };
 
-export const getAllPosts = async () => {
+export const getAllPosts = async (): Promise<PostWithFrontmatterType[]> => {
 	const posts = await Promise.all(
 		readDirectory(postsDirectory).map((path) => getPost(path.filePath)),
 	);

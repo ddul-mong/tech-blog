@@ -8,7 +8,8 @@ type PostProps = {
 	};
 };
 
-export default async function Post({ params: { slug } }: PostProps) {
+export default async function Post({ params }: PostProps) {
+	const { slug } = await params;
 	const post = await getPost(slug);
 	if (!post) return redirect("/");
 

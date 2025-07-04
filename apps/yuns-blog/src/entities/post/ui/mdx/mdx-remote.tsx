@@ -34,7 +34,7 @@ export const MdxRemote: React.FC<MdxRemoteProps> = ({ source }) => {
 							[
 								rehypePrettyCode,
 								{
-									theme: "nord",
+									theme: "github-dark",
 									//@ts-expect-error
 									onVisitLine(node) {
 										if (node.children.length === 0) {

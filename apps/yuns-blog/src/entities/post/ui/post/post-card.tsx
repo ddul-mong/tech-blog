@@ -14,7 +14,7 @@ export const PostCard: FC<PostCardProps> = ({ post }) => {
 	return (
 		<li
 			className={cn(
-				"flex h-full flex-col gap-3 rounded-md border shadow-md transition hover:shadow-xl hover:-translate-y-0.5",
+				"flex h-full flex-col gap-3 rounded-sm border shadow-md bg-zinc-300 hover:border-amber-500",
 			)}
 		>
 			<Link href={postLink} title={post.title} className="h-full">

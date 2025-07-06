@@ -16,6 +16,7 @@ export default async function Post({
 }: PostProps): Promise<ReactElement> {
 	const { slug } = await params;
 	const post: PostWithFrontmatterType | null = await getPost(slug);
+	console.log(slug);
 	if (!post) return redirect("/");
 
 	return <PostDetailPage post={post} />;

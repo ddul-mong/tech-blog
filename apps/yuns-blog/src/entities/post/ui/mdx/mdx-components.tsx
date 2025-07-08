@@ -48,7 +48,7 @@ export const MDXComponents = {
 		return (
 			<Link
 				className={
-					" underline underline-offset-4 text-primary-600 hover:rounded-sm duration-200 transition-colors hover:text-primary-700 hover:bg-neutral-200"
+					"underline underline-offset-4 text-blue-500 hover:rounded-sm duration-200 transition-colors hover:text-blue-700 hover:bg-blue-300"
 				}
 				target={"_blank"}
 				href={href ?? ""}

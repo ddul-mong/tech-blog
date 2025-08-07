@@ -19,6 +19,7 @@
 		"@dul-mong/utils": "workspace:*",
 		"@tailwindcss/postcss": "^4.1.11",
 		"@tailwindcss/typography": "^0.5.16",
+		"@types/mdx": "^2.0.13",
 		"@types/node": "^20.19.4",
 		"@types/react": "^19.1.8",
 		"@types/react-dom": "^19.1.6",

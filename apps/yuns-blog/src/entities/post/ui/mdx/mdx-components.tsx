@@ -1,4 +1,4 @@
-import type { MDXComponents as tmdxComponents } from "mdx/types";
+import type { MDXComponents as mdxComponents } from "mdx/types";
 import Image from "next/image";
 import Link from "next/link";
 import type {
@@ -13,7 +13,7 @@ type AnchorProps = AnchorHTMLAttributes<HTMLAnchorElement>;
 // type ParagraphProps = HTMLAttributes<HTMLParagraphElement>;
 // type ElementProps = HTMLAttributes<HTMLElement>;
 
-export const MDXComponents = {
+export const MDXComponents: mdxComponents = {
 	img: (props: HTMLProps<HTMLImageElement>) => {
 		return (
 			<span className="my-[16px] items-center relative w-full h-256 md:h-512">
@@ -32,6 +32,7 @@ export const MDXComponents = {
 	},
 	a: ({ className, href, ...props }: AnchorProps) => {
 		if (!href) return null;
+
 		const isAnchorLink = href.startsWith("#");
 
 		if (isAnchorLink) {
@@ -44,7 +45,6 @@ export const MDXComponents = {
 				/>
 			);
 		}
-
 		return (
 			<Link
 				className={

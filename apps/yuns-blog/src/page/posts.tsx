@@ -8,7 +8,7 @@ type PostsPageProps = {
 
 const PostsPage: React.FC<PostsPageProps> = ({ posts }) => {
 	return (
-		<main className={cn("md:max-w-3xl md:mx-auto")}>
+		<main className={cn("md:max-w-[630px] md:mx-auto")}>
 			<ul className={cn("list-none p-0")}>
 				{posts.map((post) => (
 					<PostCard key={post.title} post={post} />
